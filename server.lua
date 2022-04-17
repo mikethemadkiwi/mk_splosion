@@ -1,5 +1,6 @@
 numSplosions = {}
-local BlockedExplosions = {1, 2, 4, 5, 25, 32, 33, 35, 36, 37, 38}
+local BlockedExplosions = {1, 2, 4, 5, 7, 8, 10, 17, 15, 25, 32, 33, 35, 36, 37, 38}
+local BannedExplosions = {53, 55, 56, 59}
 AddEventHandler(
   "explosionEvent",
   function(sender, ev)
