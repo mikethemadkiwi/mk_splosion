@@ -11,8 +11,8 @@ AddEventHandler("explosionEvent", function(sender, ev)
         else
             numSplosions[sender] = numSplosions[sender] + 1
         end
-        print('User ['..sender..'] has generated ['..numSplosions[sender]..'] explosions events. ( EVID:'..ev.explosionType..' )')
         -- warning goes here.
+        print('User ['..sender..'] has generated ['..numSplosions[sender]..'] explosions events. ( EVID:'..ev.explosionType..' )')
         return
         end
     end
@@ -25,9 +25,12 @@ AddEventHandler("explosionEvent", function(sender, ev)
             else
                 numSplosions[sender] = numSplosions[sender] + 1
             end
-            print('User ['..sender..'] has generated ['..numSplosions[sender]..'] explosions events. ( EVID:'..ev.explosionType..' )')
             if numSplosions > 5 then
                 DropPlayer(sender, 'those explosions are NOT events that just "happen".... get out. '
+            else
+                --send them back something horrible as a warning.
+            end
+            print('User ['..sender..'] has generated ['..numSplosions[sender]..'] explosions events. ( EVID:'..ev.explosionType..' )')
             return
         end
     end
