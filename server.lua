@@ -26,7 +26,7 @@ AddEventHandler("explosionEvent", function(sender, ev)
                 numSplosions[sender] = numSplosions[sender] + 1
             end
             if numSplosions > 5 then
-                DropPlayer(sender, 'those explosions are NOT events that just "happen".... get out. '
+                DropPlayer(sender, 'those explosions are NOT events that just "happen".... get out. ')
             else
                 --send them back something horrible as a warning.
             end
